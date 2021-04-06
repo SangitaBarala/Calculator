@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv =  (TextView)findViewById(R.id.tvDisplay1);
     }
+
+    // Select the buttons using their IDs
+
      public void selectNumber(View v){
         if(operatorClicked == true){
             tv.setText("");
@@ -77,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(numbers);
     }
 
+    // function to use the decimal point
+
     public void decimalPoint(View v) {
         switch (v.getId()){
             case R.id.btnDot:
@@ -89,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
     }
+
+    // function to access the operators using their IDs
 
      public void operatorEvent(View v){
        operatorClicked = true;
@@ -109,6 +116,9 @@ public class MainActivity extends AppCompatActivity {
                break;
        }
      }
+
+     // function to calculate the result based on the operator selection
+
      public void calculateResult(View v){
         String newNumber = tv.getText().toString();
         double result =0.0;
