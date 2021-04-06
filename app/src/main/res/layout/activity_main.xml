@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/tvDisplay1"
+        android:background="#E5EBEB"
+        android:gravity="end|bottom"
+        android:textColor="#F91220"
+        android:padding="5dp"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/tvDisplay2"
+        android:background="#FFFFFF"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_gravity="end|center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="9"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="8"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="7"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="operatorEvent"
+            android:text="/"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="6"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="5"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="4"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="operatorEvent"
+            android:text="*"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="3"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="2"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="1"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="operatorEvent"
+            android:text="+"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="0"
+            android:textColor="@color/btnNumberColor"
+            android:textSize="28sp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnPercent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:text="%"/>
+
+        <Button
+            android:id="@+id/btnAddSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="+/-"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="operatorEvent"
+            android:text="-"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="←"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="selectNumber"
+            android:text="C"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnEql"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="calculateResult"
+            android:text="="
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="decimalPoint"
+            android:text="."
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
